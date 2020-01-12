@@ -16,11 +16,7 @@ const selectImage = (img) => {
     const { download_url, author, width, height } = img;
     selectedImage.src = download_url;
     selectedImage.alt = `image by ${author}`;
-    selectedImageInfo.innerHTML = `
-    <div class='image-info'>
-        ${author}, ${width}x${height}  
-    <div>
-    `;
+    selectedImageInfo.innerHTML = `${author}, ${width}x${height}`;
 }
 const fetchImages = () => {
     var xhttp = new XMLHttpRequest();

@@ -64,10 +64,11 @@ img.image {
 .image-wrapper {
     position: relative;
     width: 100%;
-    height: calc(100% - 20px);
+    height: calc(100% - 25px);
 }
 .image-info {
     text-align: center;
+    height: 25px;
 }
 .image.selected {
     max-width: 100%;
