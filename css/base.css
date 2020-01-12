@@ -1,0 +1,101 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.vh-100 {
+    height: 100vh !important;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.w-200px {
+    width: 200px !important;
+}
+
+.w-rest {
+    width: calc(100% - 200px);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scroll {
+    overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.column {
+    max-width: calc(100% - 200px);
+    height: 100%;
+    float: left;
+    position: static;
+    overflow-x: hidden;
+}
+
+.images {
+    width: 100%;
+    float: left;
+}
+
+img.image {
+    cursor: pointer;
+    margin: 0;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 20px);
+}
+.image-info {
+    text-align: center;
+}
+.image.selected {
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+    visibility: hidden;
+}
+
+.spinner {
+    visibility: hidden;
+    width: 80px;
+    height: 80px;
+    border: 5px solid #FFF;
+    border-top: 6px solid #F00;
+    border-radius: 100%;
+    animation: spin 1s infinite ease-in-out;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.show {
+    visibility: visible !important;
+}
